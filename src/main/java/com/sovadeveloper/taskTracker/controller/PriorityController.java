@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/priorities")
+@CrossOrigin
 public class PriorityController {
     private final PriorityService priorityService;
 

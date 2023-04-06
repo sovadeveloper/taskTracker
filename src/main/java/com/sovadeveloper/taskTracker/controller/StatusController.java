@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/statuses")
+@CrossOrigin
 public class StatusController {
     private final StatusService statusService;
 

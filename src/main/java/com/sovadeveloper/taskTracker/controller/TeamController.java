@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/teams")
+@CrossOrigin
 public class TeamController {
     private final TeamService teamService;
 

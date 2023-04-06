@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/sprints")
+@CrossOrigin
 public class SprintController {
     private final SprintService sprintService;
 

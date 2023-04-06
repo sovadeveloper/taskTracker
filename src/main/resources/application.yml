@@ -8,4 +8,12 @@ spring:
     database: postgresql
     hibernate:
       ddl-auto: update
-    show-sql: true
+
+security:
+  jwt:
+    secret: Z3dnd2Vnd2VnZXdnd2Vnd2Vnd2Vnd2Vnd2Vnd2VncWZ3ZHZ3Z2d3
+    access: 36000000
+    refresh: 2592000000
+
+server:
+  port: 8080
