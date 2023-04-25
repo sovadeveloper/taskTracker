@@ -13,11 +13,11 @@ public class TaskDTO {
     private String description;
     private LocalDateTime dateStart;
     private LocalDateTime dateEnd;
+    private int storyPoint;
     private PriorityDTO priority;
     private StatusDTO status;
     private TagDTO tag;
     private SprintDTO sprint;
-    private ProjectDTO project;
     private UserDTO creator;
     private UserDTO executor;
 }

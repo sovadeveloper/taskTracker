@@ -32,6 +32,9 @@ public class Task {
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd.MM.yyyy HH:mm")
     private LocalDateTime dateEnd;
 
+    @Column(name = "story_point")
+    private int storyPoint;
+
     @ManyToOne
     @JoinColumn(name = "priority_id")
     private Priority priority;
@@ -47,10 +50,6 @@ public class Task {
     @ManyToOne
     @JoinColumn(name = "sprint_id")
     private Sprint sprint;
-
-    @ManyToOne
-    @JoinColumn(name = "project_id")
-    private Project project;
 
     @ManyToOne
     @JoinColumn(name = "creator_id")

@@ -19,11 +19,11 @@ public interface TaskMapper {
     @Mapping(target = "description", source = "description")
     @Mapping(target = "dateStart", source = "dateStart")
     @Mapping(target = "dateEnd", source = "dateEnd")
+    @Mapping(target = "storyPoint", source = "storyPoint")
     @Mapping(target = "priority", source = "priority")
     @Mapping(target = "status", source = "status")
     @Mapping(target = "tag", source = "tag")
     @Mapping(target = "sprint", source = "sprint")
-    @Mapping(target = "project", source = "project")
     @Mapping(target = "creator", source = "creator")
     @Mapping(target = "executor", source = "executor")
     TaskDTO toDTO(Task task);

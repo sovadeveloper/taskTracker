@@ -13,4 +13,5 @@ public class SprintDTO {
     private LocalDateTime dateStart;
     private LocalDateTime dateEnd;
     private String status;
+    private ProjectDTO project;
 }

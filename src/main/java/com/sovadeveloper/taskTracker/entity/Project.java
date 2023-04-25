@@ -24,8 +24,8 @@ public class Project {
     private String description;
 
     @OneToMany(cascade = CascadeType.REFRESH, mappedBy = "project")
-    private List<Task> tasks;
+    private List<Team> teams;
 
     @OneToMany(cascade = CascadeType.REFRESH, mappedBy = "project")
-    private List<Team> teams;
+    private List<Sprint> sprints;
 }

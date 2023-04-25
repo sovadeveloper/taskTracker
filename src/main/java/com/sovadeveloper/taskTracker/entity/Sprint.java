@@ -35,4 +35,8 @@ public class Sprint {
 
     @OneToMany(cascade = CascadeType.REFRESH, mappedBy = "sprint")
     private List<Task> tasks;
+
+    @ManyToOne
+    @JoinColumn(name = "project_id")
+    private Project project;
 }

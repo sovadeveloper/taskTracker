@@ -17,6 +17,7 @@ public interface SprintMapper {
     @Mapping(target = "dateStart", source = "dateStart")
     @Mapping(target = "dateEnd", source = "dateEnd")
     @Mapping(target = "status", source = "status")
+    @Mapping(target = "project", source = "project")
     SprintDTO toDTO(Sprint sprint);
     List<SprintDTO> listToDTO(List<Sprint> sprints);
 }
